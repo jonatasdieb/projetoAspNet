@@ -38,7 +38,7 @@ namespace WebApi.Services
         public void ImportarExcel(string file)
         {       
 
-            var wb = new XLWorkbook(@"C:\Users\Dieb1\Documents\Projetos\WebApi\WebApi\temp\" + file);
+            var wb = new XLWorkbook(@"h:\root\home\bolaoarte-001\www\projetoll\temp\" + file);
 
             var planilha = wb.Worksheet(1);
 
