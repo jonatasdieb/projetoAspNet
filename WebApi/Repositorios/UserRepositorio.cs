@@ -17,5 +17,22 @@ namespace WebApi.Repositorios
                 && user.Password == password);
             }
         }
+
+        public void Create(User user)
+        {
+            using (Contexto db = new Contexto())
+            {
+                db.Users.Add(user);
+                db.SaveChanges();
+            }
+        }
+
+        public User getByUsername(string username)
+        {
+            using(Contexto db = new Contexto())
+            {
+               return db.Users.Where(x => x.Username == username).FirstOrDefault();                
+            }
+        }
     }
 }
