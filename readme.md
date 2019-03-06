@@ -5,5 +5,5 @@ Tecnologias utilizadas:\
 -ClosedXML para importação de planilha;\
 -Entity Framework;\
 -Data Annotations nos models para validações;\
--Separação entre models, controllers, services e repositorios para organização.
+-Arquitetura MVC com separação de services e repositórios para organização de regras de negócio e acesso a dados;\
 -Banco de dados em SQL Server;\
